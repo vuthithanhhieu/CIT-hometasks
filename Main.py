@@ -7,6 +7,7 @@ while len(l)<1000:
     for j in l:
         if i%j==0:
             prime=False
+            break
     if prime==True:
         l.append(i)
 print(l)
