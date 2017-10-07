@@ -1,0 +1,11 @@
+simple = []
+simple.append(2)
+iterator = 3
+while len(simple) < 1000:
+  for item in simple:
+      if iterator%item == 0:
+          break
+  else:
+      simple.append(iterator)
+  iterator = iterator +1
+print(simple)
