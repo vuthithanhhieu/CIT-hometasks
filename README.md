@@ -7,4 +7,10 @@ Temp repo for CIT students' hometasks
   * Зарегистрировать их с git add
   * Закоммитить изменения
   * Сделать push в свой репозиторий
-* Предложить Pull request вашей ветки в мой репозиторий.
+* Предложить Pull request вашей ветки в мой репозиторий.  
+   
+### Запуск программы:  
+```
+export GOPATH=$(pwd)  
+go run src/main.go  
+```

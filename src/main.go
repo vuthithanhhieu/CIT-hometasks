@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(prime_number.Find(10))
+	fmt.Println(prime_number.Find(1000))
 }
