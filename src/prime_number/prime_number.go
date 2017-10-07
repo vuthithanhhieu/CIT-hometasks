@@ -4,6 +4,7 @@ import (
 	"math"
 )
 
+// Returns first prime numbers of given quantity
 func Find(quantity uint) []uint {
 	var counter, i uint = 0, 2
 	prime_numbers := make([]uint, quantity)
@@ -16,10 +17,11 @@ func Find(quantity uint) []uint {
 	return prime_numbers
 }
 
+// Detects if given number is prime
 func isPrime(num uint) bool {
 	var i uint
 	for i = 2; i <= uint(math.Sqrt(float64(num))); i++ {
-		if num % i == 0 {
+		if num%i == 0 {
 			return false
 		}
 	}
