@@ -5,7 +5,7 @@ defmodule Primes do
         |> length()) == 1
     end
     
-    def primes(_, _, counter) when counter == 1000, do: []
+    def primes(n, _, counter) when counter == n + 1, do: []
 
     def primes(n, acc, counter) do
         if (isPrime(acc)), do: [acc | primes(n, acc + 1, counter + 1)], else: primes(n, acc + 1, counter)
