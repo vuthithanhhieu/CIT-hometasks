@@ -28,3 +28,4 @@ Type "copyright", "credits" or "license()" for more information.
 		count+=1
 
 print(List)
+#Я Я добавтила цикл while с количеством простых чисел <= 1000. Если число простое - добавляем в List. и потом увеличить count единицу и вывод List
