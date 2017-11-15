@@ -67,10 +67,10 @@ for f in range (0,30):
 for u in range(0,len(Users)):
      for f in range (0,30):
          dat= (Cont.iloc[u])[f] #день 
-         if (dat==' Mon'):   #Выбрать понедельник 
+         if (dat==' Sun'):   #Выбрать понедельник 
              (Users.iloc[u])[f]=-1         
 for x in range(0,len(Users)):
-	if x!=myuser:
+	if x!=myuser-1:
 		sim_uv[x]=cosine_metric(Users.iloc[x], User35)		
 sim_uv=dict(sorted(sim_uv.items(), key=lambda x: x[1], reverse=True)[:k])
 for x in range(0,len(User35)):
